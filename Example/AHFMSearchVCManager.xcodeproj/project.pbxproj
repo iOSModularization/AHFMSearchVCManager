@@ -301,11 +301,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AHFMSearchVCManager_Example/Pods-AHFMSearchVCManager_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AHFMBottomPlayerServices/AHFMBottomPlayerServices.framework",
+				"${BUILT_PRODUCTS_DIR}/AHFMKeywordVCServices/AHFMKeywordVCServices.framework",
+				"${BUILT_PRODUCTS_DIR}/AHFMModuleManager/AHFMModuleManager.framework",
+				"${BUILT_PRODUCTS_DIR}/AHFMNetworking/AHFMNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/AHFMSearchVCManager/AHFMSearchVCManager.framework",
+				"${BUILT_PRODUCTS_DIR}/AHFMSearchVCService/AHFMSearchVCService.framework",
+				"${BUILT_PRODUCTS_DIR}/AHFMServices/AHFMServices.framework",
+				"${BUILT_PRODUCTS_DIR}/AHServiceRouter/AHServiceRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMBottomPlayerServices.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMKeywordVCServices.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMModuleManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMSearchVCManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMSearchVCService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMServices.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHServiceRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -1,0 +1,45 @@
+{
+  "name": "AHFMSearchVCManager",
+  "version": "0.1.0",
+  "summary": "A short description of AHFMSearchVCManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/iOSModularization/AHFMSearchVCManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ivsall2012": "ivsall2012@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/iOSModularization/AHFMSearchVCManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AHFMSearchVCManager/Classes/**/*",
+  "dependencies": {
+    "AHFMModuleManager": [
+
+    ],
+    "AHServiceRouter": [
+
+    ],
+    "AHFMNetworking": [
+
+    ],
+    "AHFMSearchVCService": [
+
+    ],
+    "AHFMBottomPlayerServices": [
+
+    ],
+    "AHFMKeywordVCServices": [
+
+    ],
+    "SwiftyJSON": [
+
+    ]
+  }
+}

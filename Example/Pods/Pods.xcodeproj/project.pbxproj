@@ -1,0 +1,2805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0439636072010E32C470AD605E7C0B9A /* AHFMSearchVCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598023A86815BCD450605A8AE65225B /* AHFMSearchVCManager.swift */; };
+		0598CE735F4731B2D270CE29BB75BBC7 /* AHFMServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38681C6009D9C85FDE296DECEF4D133D /* AHFMServices.swift */; };
+		0F5299E842A542E2D94EB8B636AD0251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		156BBE48F869BEC5091D95AC8F414F4B /* Pods-AHFMSearchVCManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CE30BF548258CCB8A2B7D2549F16AB /* Pods-AHFMSearchVCManager_Example-dummy.m */; };
+		21B787AC2744EE859FBA07781B2F2867 /* AHFMSearchVCService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F4FE4747DDE6D95CA3D8EE6F3FE5F3 /* AHFMSearchVCService.framework */; };
+		21D1AAB68F8BCFC9A8A2BF0C0A3F68A3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805AF79E556F3CDB4348F1B4E8A79B28 /* Alamofire.framework */; };
+		251D56CC4C692C69DD3C88E747835930 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB30FEF16BC53D04D4F0ED90AEEBDE /* ResponseSerialization.swift */; };
+		2724B4BC11F2C6F531E4EF6B7CE3EE38 /* AHFMModuleManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0BF6C2E1B828781AC0971C6964D0065 /* AHFMModuleManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		272F685254E28CBFC1D9F0C879D4B0D2 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5114A9519A19F4CEF00AB851796D1FF /* SwiftyJSON-dummy.m */; };
+		2AF6307A158F5970C82A34B374896887 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E7A84CB3D7DCF07C0DAFCF845F6AEB /* SessionDelegate.swift */; };
+		2B44EC7439E12F6315BE810500AD48A0 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F538D57B1273B56CF0D963DB93538F2 /* MultipartFormData.swift */; };
+		2EACD002BA0C2858837D805F7F9A04CF /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12913D4B5726E04FD527ED7F36722303 /* Notifications.swift */; };
+		2F677D40480B4BF12EB397154B25E18D /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E22E8C3F33CDE30916F04EDADF70DF7D /* KeychainAccess-dummy.m */; };
+		3056B7D5D5F660D980BDB89657246AEF /* AHFMServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE81B1A9B9C29FDA922487826C239E5 /* AHFMServices.framework */; };
+		36EEB982517BDDFE03D9DA4617EB5B69 /* Pods-AHFMSearchVCManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C151527BF1B4BAD1C389C4C9EEA5FF4B /* Pods-AHFMSearchVCManager_Tests-dummy.m */; };
+		3CD3EFD6B166C76A9DD544E9445AB644 /* AHFMModuleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89208712CA022203399977EBF5146CE /* AHFMModuleManager.swift */; };
+		3DC090B6C3C2240140ED92E593C234F6 /* AHFMBottomPlayerServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F047D597E1A8364C7FC530F59358A7 /* AHFMBottomPlayerServices.swift */; };
+		4536FE78D68EF93B21ED834B948909CD /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2753825F9DFE3F9A02CC89335E37CDBA /* ServerTrustPolicy.swift */; };
+		4BD5EB7257634C0D6BB8B2D7CCB9CCB7 /* AHFMBottomPlayerServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F0AEB0AF8A19813E7D4D3E06586035 /* AHFMBottomPlayerServices-dummy.m */; };
+		4E919A6C7B87AD537C2AB800A67B2B45 /* AHFMKeywordVCServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4252B95393BF083A34F6DE744EE9C58 /* AHFMKeywordVCServices-dummy.m */; };
+		4E9DD399D3A90DFB718919649A6AF51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		4EEE6F31829B94C057E75C4EAFF2EA70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		55BCC2CD90926169CD9F3023BFD0DC09 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD55F15E3724B1141D7EBCFBE146763 /* Manager.swift */; };
+		5D1600D6532E2470F85B6229A3D03EF5 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE766D6A20E2C7232832E254FB410E /* Keychain.swift */; };
+		5D85BA80E0E9EE3DF895FE59F69DC1DF /* AHServiceRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F4832616894D13B8853502091F8DE /* AHServiceRouter-dummy.m */; };
+		6078664C59940F1066623FCED066390E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EE3767D90B594B7AB37D1831C704B7 /* Response.swift */; };
+		6262B52C91B096754042D8ED7C098683 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10E9CD8B64D230BEB6719D5151B5F07 /* Alamofire.swift */; };
+		62B64C2CAFA391E58202E80FC5649957 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7667F0527E44A6988453B0D90AEC6D /* DispatchQueue+Alamofire.swift */; };
+		68EFFE961CB4F79386A6C86A72E65D55 /* AHFMNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F148591F106E998816A9545DF7C1962 /* AHFMNetworking-dummy.m */; };
+		70D275A58774A62FB7CC3E92F1F8EC1C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FDA51D7ECF2AC59607F7B4D6FBD76F /* SwiftyJSON.swift */; };
+		74EC93BFE1B2FC4D1BC3D2A58FB3473F /* AHFMBottomPlayerServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFC861F928277953FF55B9105A70144 /* AHFMBottomPlayerServices.framework */; };
+		751D2DDACF50FE30FB606576E8195006 /* AHKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C815D2E063775315B537F58F2820017 /* AHKeychain.swift */; };
+		75FCE1776B1A2E082B847A28B0E61961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		782FCE2ED99FE8F2CD1F01C04153FA5B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2BBE600D4D738C8BFE53CFAD6A1575 /* SessionManager.swift */; };
+		7D53AAEDE75EABB7DBF0F53025ECA551 /* AHFMKeywordVCServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE61BD50BF345C5D631F3392271BC15 /* AHFMKeywordVCServices.framework */; };
+		81BD7BF76F501FC24128BB4BAB6F053C /* AHServiceRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B854878F95C80DC8FDABD486120667 /* AHServiceRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81F296999CB4CBA7A231023E2603612C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF005CED0691DA09945467AA16E7A9AF /* Request.swift */; };
+		8251A5A12D8A9125EDF7554F412BF6C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		8426D017CAFF19347FAF72F6A0903A0F /* AHFMBottomPlayerServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D32A09727380F01CB78844A885D88F4 /* AHFMBottomPlayerServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		851E3025D4942FC5612FF410E2C2B0A8 /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1F0952102C48E61FE0F3F40E745F3DE /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8959F83A5D2106FD79B6DDE2B3A4FFB1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91548789F7D5524C7C70AA256D0A1C36 /* SwiftyJSON.framework */; };
+		8A9FBC08A76D1B52CD72301F8387DF3B /* AHFMKeywordVCServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1BC96AAFD0A4DE37BA25D4CF07F16D2 /* AHFMKeywordVCServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9119DD69F6D28CA941B70F1A0551C677 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E67F96D3AD57F62050C58DBB7B8F69B6 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92921755879D249C0BF7BD0F369B93A3 /* AHFMNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBC425920DB6861C68F5BCC7610A829 /* AHFMNetworking.swift */; };
+		93DE5F5349C842948AE90517B5E6201B /* AHFMSearchVCManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C61F397745319EFFB0BC12E5139FD15 /* AHFMSearchVCManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94FEA1740D270643D5240612D7AE09AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		95B4702B1682B6B43E2F979040019175 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 297EC1F95B656EF7A99B0CF4E7313444 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95F6FE62457CB1C1CFAFF97A4A9CEA41 /* AHFMKeywordVCServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F730558917E226590D23978D8982E616 /* AHFMKeywordVCServices.swift */; };
+		9B450DA67B71E27D60D215F9A0645EE0 /* AHFMServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE81B1A9B9C29FDA922487826C239E5 /* AHFMServices.framework */; };
+		9BF555CACADC42DA037212216F3A3B1A /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE4529E88D58F579C451E90C7E1ACF /* AFError.swift */; };
+		9C78E2AE2C27D22900126C013311ED27 /* AHFMSearchVCService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3722308654BB91360E489F02A71A6C82 /* AHFMSearchVCService-dummy.m */; };
+		A0BD72DA6839270922C600C180EDA8F3 /* AHNetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC2591B1475CD09541C92B0F23B1CD /* AHNetworkConstants.swift */; };
+		A2234EDB2123746E9E1631A253C92B2B /* AHFMSearchVCManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0134F565C22207305457E3F5BE78D87E /* AHFMSearchVCManager-dummy.m */; };
+		A545C15E3B2C8F07103416FE4F060345 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		A7716959063647D747B4441186D78897 /* AHFMNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7A22292644C46CF240E006A0D92907 /* AHFMNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7B350A8C22C82E3CABA17751F821F55 /* AHFMModuleManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763431DE678C5562E641D5D45F840696 /* AHFMModuleManager.framework */; };
+		B1D0CB89982FC8DAB74254794B6B8DFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		B634A535B97BE1C7474C2F7639224B66 /* AHFMSearchVCService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D642EB7519532A639B69E37C8CF3553 /* AHFMSearchVCService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B865032BF098678A60199370C0130CBE /* AHFMModuleManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FEFD714DBC8B7A43E4FD89FE95FF9E /* AHFMModuleManager-dummy.m */; };
+		B8EE1DFCA7803278F51A911230C18BD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		C61FE9F051B9AD0E79F1D712592FB582 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE56AFF892F2667FD4F872366C98C18 /* NetworkReachabilityManager.swift */; };
+		C800B9CE9E2BEC8532007B9FAEC3DD50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		CEE3B60BEAF21F8745CC6C3485C76E27 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB5F3C985A25FFF60C3C547A042BB13 /* Validation.swift */; };
+		D0C70E8423B057B8A2D9EEA7F3B07093 /* AHFMSearchVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFA0DBCF3BC8997F2F0300B4FD3586 /* AHFMSearchVCService.swift */; };
+		D5D150B02057B056EA30F39C082973BC /* Pods-AHFMSearchVCManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F0F4663780B81023DB974C16C30663F /* Pods-AHFMSearchVCManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D83CDBE082390B38434F253A43DAAC8C /* AHServiceRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F167BD00173639209D9ACD552B37C4 /* AHServiceRouter.framework */; };
+		D97A02594385F188100C50EF3544CCAC /* AHFMServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E38560AE75589CB008581F219631B63 /* AHFMServices-dummy.m */; };
+		DBC1BC4DAB990D23005EC65350658DFE /* OAuth2Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1263FFFA805002619FE3D55A268F3B11 /* OAuth2Handler.swift */; };
+		DE0AA6B1ED674C6102BE7AC034535933 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 805AF79E556F3CDB4348F1B4E8A79B28 /* Alamofire.framework */; };
+		DE72B746D3F858F7BE16FEE3582231DB /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936AEC94A92AB9DD23D05784892DFE82 /* KeychainAccess.framework */; };
+		E3413080BE1DC030B365CF7F7891848B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FDD049B4DA82A06CBA43097B7419C /* Result.swift */; };
+		E55723A418521613951C5AEE9FFB2438 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F906967659086354B70B2F5C7A2CCE /* TaskDelegate.swift */; };
+		E6E5445364991BB6FA562CF12E33680F /* AHFMNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D57D42CE860977AF14CA4EBFF7E684F /* AHFMNetworking.framework */; };
+		E9033A3B8AED9CDE98AC2D5F2118C737 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 232CD22DE900A37DE02B978C3CCEDD8D /* Alamofire-dummy.m */; };
+		EA1F5BAE2B60D05E7F0243512BDFE2B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		EA8049B94E7FA03E97728A14573504B0 /* AHFMServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE81B1A9B9C29FDA922487826C239E5 /* AHFMServices.framework */; };
+		ED74D6C8098DA3FBDE71F9F2C3B4343A /* AHFMServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE81B1A9B9C29FDA922487826C239E5 /* AHFMServices.framework */; };
+		EDE190B241D1A4742046640ACC486837 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936AEC94A92AB9DD23D05784892DFE82 /* KeychainAccess.framework */; };
+		EE840DC755CB716F2AD544D9C09B6877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		F2C7CFD8FA4DE74F69DBB75A599B01C6 /* AHServiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA41F7B1682FAE0C12EE2AE8A51A9778 /* AHServiceRouter.swift */; };
+		F353C240F597CEA66C47E97994E7B2B1 /* Pods-AHFMSearchVCManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EFD9EA8B3C06217DF1CBCA0DB47B5D0 /* Pods-AHFMSearchVCManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7C2B26233D486908A223D7AD91321E7 /* AHFMServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 557C9F2F2BAA2A9E03C11039DE052441 /* AHFMServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7CE37DE16592C58B0639BECFF258379 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0518E0C543947C80050D4ADF3589456C /* Foundation.framework */; };
+		FBBA1A060B541705F67537F0B8426651 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D6017DCBC29CB2CC7BEC4B601B3EA /* Timeline.swift */; };
+		FE174801DE1397A067077A1D8A969C8D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14168FB41DC26478BF91CBE3B9BB4CAA /* ParameterEncoding.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0272D4408BC17A89678E7D542BCEB965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B749285B2BCE20FE45EF0783729029;
+			remoteInfo = AHFMServices;
+		};
+		0F804F6040BFAEAB4C61630D00502DE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 281DC9F00597807CD56AEFAC9414C787;
+			remoteInfo = AHFMSearchVCService;
+		};
+		1A2B263487D5350E0C10436AEC799D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B749285B2BCE20FE45EF0783729029;
+			remoteInfo = AHFMServices;
+		};
+		1D5DAAC1076E96B3ADD076440B8DACA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D762CF821B22B52375426FC24E2451B;
+			remoteInfo = Alamofire;
+		};
+		22DCEF1C1E883CE4F5D47B94EF1E552E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C1EE9091653098E2BCC00F7B1FC00DB;
+			remoteInfo = AHFMBottomPlayerServices;
+		};
+		29D7F87FCD447C470607CDA8AC3F6FD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71CAD123705AC9F38F2080F525733EA1;
+			remoteInfo = KeychainAccess;
+		};
+		2A96AAA37568C20C8AE8B7B0EADCC022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B749285B2BCE20FE45EF0783729029;
+			remoteInfo = AHFMServices;
+		};
+		2AA3594C693849B4117D2BB41707D1F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE7102807C3633592B8FE9059AF67B90;
+			remoteInfo = SwiftyJSON;
+		};
+		3858BF0197044CF211B9DB1DCCF6605F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F04DD2D362C46C9C4CAA4AB6035A414F;
+			remoteInfo = AHServiceRouter;
+		};
+		3E2D51D8E4751CD1128FB5CA45247A4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E97C0A86C6735476F20317F9C290793;
+			remoteInfo = AHFMKeywordVCServices;
+		};
+		3F284CC049D6FEE16C5B4770C4F28584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D762CF821B22B52375426FC24E2451B;
+			remoteInfo = Alamofire;
+		};
+		424CEB916EF037AC5D8951C1F032B1BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D762CF821B22B52375426FC24E2451B;
+			remoteInfo = Alamofire;
+		};
+		46E8C26DCB9794573A81EE14D55ED137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C88927BE4F54B6FA3441BE9273219233;
+			remoteInfo = AHFMModuleManager;
+		};
+		4774DA12F7C3F158A4B4FB211B98886A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F3A82B83022BFDBAEDB60C32B6ADCCE;
+			remoteInfo = AHFMSearchVCManager;
+		};
+		4E43CAB8A48635A9EF1240C327921210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 281DC9F00597807CD56AEFAC9414C787;
+			remoteInfo = AHFMSearchVCService;
+		};
+		534743A119CC945B7067F41BC603971A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71CAD123705AC9F38F2080F525733EA1;
+			remoteInfo = KeychainAccess;
+		};
+		58C795116390585D2A0CB7D0D721D84C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71CAD123705AC9F38F2080F525733EA1;
+			remoteInfo = KeychainAccess;
+		};
+		6B6FE75214A80363F58AD32E08E6DD34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51D325E7D7D939E69172CA0FD29F6740;
+			remoteInfo = AHFMNetworking;
+		};
+		7B91A04D6A943F0DD3B14F36565BF4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F04DD2D362C46C9C4CAA4AB6035A414F;
+			remoteInfo = AHServiceRouter;
+		};
+		7D28C7EBE0CA0CE863AB8B55B4DD5617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B749285B2BCE20FE45EF0783729029;
+			remoteInfo = AHFMServices;
+		};
+		846152D1C4AAD0A468F1E8CD90DB1E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C1EE9091653098E2BCC00F7B1FC00DB;
+			remoteInfo = AHFMBottomPlayerServices;
+		};
+		9E753AE8A6FA6522F39056C5B1E679C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51D325E7D7D939E69172CA0FD29F6740;
+			remoteInfo = AHFMNetworking;
+		};
+		B0970933FE8A3284D5BE9A30EED8D684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C88927BE4F54B6FA3441BE9273219233;
+			remoteInfo = AHFMModuleManager;
+		};
+		F13EFB59C01E67CBFEE9A1033AC83CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E97C0A86C6735476F20317F9C290793;
+			remoteInfo = AHFMKeywordVCServices;
+		};
+		F724B24EC4DCF6EC064F6299E40627A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B749285B2BCE20FE45EF0783729029;
+			remoteInfo = AHFMServices;
+		};
+		FA2AF6C58FAA3C4D68FF1398D2745F43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE7102807C3633592B8FE9059AF67B90;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0000A077C94A6A7391ACDE927A0A49CD /* Pods-AHFMSearchVCManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AHFMSearchVCManager_Example.modulemap"; sourceTree = "<group>"; };
+		0045F6B6E3A29D845A15EB7E6E9759B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0134F565C22207305457E3F5BE78D87E /* AHFMSearchVCManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMSearchVCManager-dummy.m"; sourceTree = "<group>"; };
+		028FC61C38FB814969340781FB686B82 /* AHFMSearchVCService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMSearchVCService.modulemap; sourceTree = "<group>"; };
+		03F906967659086354B70B2F5C7A2CCE /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		04DA5ED4B95C1A39FA0C2187E15AD469 /* AHFMModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0518E0C543947C80050D4ADF3589456C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		07EE3767D90B594B7AB37D1831C704B7 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		087E3289AD3BACC3E62EC6F2D18B7781 /* AHFMModuleManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMModuleManager.modulemap; sourceTree = "<group>"; };
+		0888D04833B20C6B5253A10E9B7AEEA9 /* AHFMNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMNetworking.modulemap; sourceTree = "<group>"; };
+		09B854878F95C80DC8FDABD486120667 /* AHServiceRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHServiceRouter-umbrella.h"; sourceTree = "<group>"; };
+		0A4F47C441439ED9FB204AF1CA9232FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CD356306DB5DC20B8A5976D01336D82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D32A09727380F01CB78844A885D88F4 /* AHFMBottomPlayerServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMBottomPlayerServices-umbrella.h"; sourceTree = "<group>"; };
+		1263FFFA805002619FE3D55A268F3B11 /* OAuth2Handler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Handler.swift; path = AHFMNetworking/Classes/OAuth2Handler.swift; sourceTree = "<group>"; };
+		12913D4B5726E04FD527ED7F36722303 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		14168FB41DC26478BF91CBE3B9BB4CAA /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		1438D9BF1CE6E679B678E645A47AE6E1 /* Pods-AHFMSearchVCManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMSearchVCManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		17FA37346C8CCDF3D598946FBD9D9906 /* AHServiceRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHServiceRouter.xcconfig; sourceTree = "<group>"; };
+		1CBC425920DB6861C68F5BCC7610A829 /* AHFMNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMNetworking.swift; path = AHFMNetworking/Classes/AHFMNetworking.swift; sourceTree = "<group>"; };
+		1D57D42CE860977AF14CA4EBFF7E684F /* AHFMNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB7C67CDF038263C5C74436C30ED53B /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
+		1E2BBE600D4D738C8BFE53CFAD6A1575 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		20695FC36377C1DCDCD48DCEBFF36688 /* AHFMNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMNetworking-prefix.pch"; sourceTree = "<group>"; };
+		232CD22DE900A37DE02B978C3CCEDD8D /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		238FDD049B4DA82A06CBA43097B7419C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		2753825F9DFE3F9A02CC89335E37CDBA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		297EC1F95B656EF7A99B0CF4E7313444 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		2BF2DB36B32B16A6D9B11D417C2A07E7 /* Pods-AHFMSearchVCManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHFMSearchVCManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2DD55F15E3724B1141D7EBCFBE146763 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		3598023A86815BCD450605A8AE65225B /* AHFMSearchVCManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMSearchVCManager.swift; sourceTree = "<group>"; };
+		3722308654BB91360E489F02A71A6C82 /* AHFMSearchVCService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMSearchVCService-dummy.m"; sourceTree = "<group>"; };
+		38681C6009D9C85FDE296DECEF4D133D /* AHFMServices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMServices.swift; path = AHFMServices/Classes/AHFMServices.swift; sourceTree = "<group>"; };
+		3B073CC88581955FB2F91F170ECCCD7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB18972BEA41777982F761B442A8ED4 /* AHFMBottomPlayerServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMBottomPlayerServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC91E0F022ED4B29A224ADC42D4870A /* AHFMKeywordVCServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMKeywordVCServices.modulemap; sourceTree = "<group>"; };
+		3EFC861F928277953FF55B9105A70144 /* AHFMBottomPlayerServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMBottomPlayerServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1692ECB5DE6465B7D607F80EE5A4CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F538D57B1273B56CF0D963DB93538F2 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		411D6A8C29D32AB0A4E60228F75820C4 /* AHFMSearchVCService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMSearchVCService-prefix.pch"; sourceTree = "<group>"; };
+		43AE1612C1E104C6B813BFAB67ADB1D1 /* Pods-AHFMSearchVCManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMSearchVCManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		43F0AEB0AF8A19813E7D4D3E06586035 /* AHFMBottomPlayerServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMBottomPlayerServices-dummy.m"; sourceTree = "<group>"; };
+		463981DE0960843F77AC1B8BDB302C72 /* AHFMBottomPlayerServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMBottomPlayerServices.modulemap; sourceTree = "<group>"; };
+		470B79CDA9F958A5FBED5F3A2AA015BE /* AHFMSearchVCService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMSearchVCService.xcconfig; sourceTree = "<group>"; };
+		48E9E3599AEB0928F8E4C608EBE2AE8D /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		4951D3F968AC92400972817499032244 /* AHFMBottomPlayerServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMBottomPlayerServices-prefix.pch"; sourceTree = "<group>"; };
+		4C815D2E063775315B537F58F2820017 /* AHKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHKeychain.swift; path = AHFMNetworking/Classes/AHKeychain.swift; sourceTree = "<group>"; };
+		4E38560AE75589CB008581F219631B63 /* AHFMServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMServices-dummy.m"; sourceTree = "<group>"; };
+		4EFD9EA8B3C06217DF1CBCA0DB47B5D0 /* Pods-AHFMSearchVCManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHFMSearchVCManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		4F9ADB0A48D3C6BE7137B2368C9B254F /* AHFMSearchVCManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMSearchVCManager-prefix.pch"; sourceTree = "<group>"; };
+		50460371E4BF0712B80D9CA37D3251F5 /* AHFMKeywordVCServices.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMKeywordVCServices.xcconfig; sourceTree = "<group>"; };
+		52AC2591B1475CD09541C92B0F23B1CD /* AHNetworkConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHNetworkConstants.swift; path = AHFMNetworking/Classes/AHNetworkConstants.swift; sourceTree = "<group>"; };
+		557C9F2F2BAA2A9E03C11039DE052441 /* AHFMServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMServices-umbrella.h"; sourceTree = "<group>"; };
+		5AB5A94F0A77280B385DECC398CBB691 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE632B5EB8963B24D537D6CD4EAB977 /* AHFMServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMServices-prefix.pch"; sourceTree = "<group>"; };
+		62FC234416DFC97DC003D9F87E89341A /* AHFMNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMNetworking.xcconfig; sourceTree = "<group>"; };
+		64631B492A2BFCE228738C255EFF3A9E /* Pods-AHFMSearchVCManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMSearchVCManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		67FE4529E88D58F579C451E90C7E1ACF /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		699CBCB47373F9C0AA159DBC9654577E /* Pods-AHFMSearchVCManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMSearchVCManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BE61BD50BF345C5D631F3392271BC15 /* AHFMKeywordVCServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMKeywordVCServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BE81B1A9B9C29FDA922487826C239E5 /* AHFMServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D642EB7519532A639B69E37C8CF3553 /* AHFMSearchVCService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMSearchVCService-umbrella.h"; sourceTree = "<group>"; };
+		74C57BA7D763414C4164E3F016E0049A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		752A7F53F4B312DBF395ED8F1822C44E /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		763431DE678C5562E641D5D45F840696 /* AHFMModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B59596AD7CB01E5DFADD4D574A538E /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		78BB5FB491FD1ECEFBEDD637E6BA97C7 /* AHServiceRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHServiceRouter.modulemap; sourceTree = "<group>"; };
+		7B49BE01318C3DE03D221F5A7B782B0B /* AHServiceRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHServiceRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE56AFF892F2667FD4F872366C98C18 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		7C61F397745319EFFB0BC12E5139FD15 /* AHFMSearchVCManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMSearchVCManager-umbrella.h"; sourceTree = "<group>"; };
+		7D034256711672188816818F674C932F /* Pods-AHFMSearchVCManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMSearchVCManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7E7A22292644C46CF240E006A0D92907 /* AHFMNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMNetworking-umbrella.h"; sourceTree = "<group>"; };
+		7F148591F106E998816A9545DF7C1962 /* AHFMNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMNetworking-dummy.m"; sourceTree = "<group>"; };
+		7FFE766D6A20E2C7232832E254FB410E /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
+		805AF79E556F3CDB4348F1B4E8A79B28 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A1861818D758F847EA9CC944B79EEE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B178FBA72C28690FD1BB5686F4BC40 /* AHFMModuleManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMModuleManager.xcconfig; sourceTree = "<group>"; };
+		883DCC201F830D999DB1A6CD51943F81 /* Pods-AHFMSearchVCManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMSearchVCManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8AB5F3C985A25FFF60C3C547A042BB13 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		8E7667F0527E44A6988453B0D90AEC6D /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		90E7A84CB3D7DCF07C0DAFCF845F6AEB /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		91548789F7D5524C7C70AA256D0A1C36 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		918C93D400A163C44C2AB52C48898A6C /* AHFMSearchVCManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMSearchVCManager.xcconfig; sourceTree = "<group>"; };
+		92F167BD00173639209D9ACD552B37C4 /* AHServiceRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHServiceRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FA71F53B77BD0671D69C48E6E75D10 /* Pods-AHFMSearchVCManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHFMSearchVCManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		936AEC94A92AB9DD23D05784892DFE82 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		943AD21BC9EE0422E89A2E92A91118DE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FB7BD448A9A2A85650F671AF0B7B28 /* AHFMKeywordVCServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMKeywordVCServices-prefix.pch"; sourceTree = "<group>"; };
+		98CB30FEF16BC53D04D4F0ED90AEEBDE /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		990BD35498F85694122DDCCAF7D6144D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		993F84995EA736DCEA1E16B7635C2003 /* Pods-AHFMSearchVCManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHFMSearchVCManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9ED9DCF8CAB0CE30C8FC192A347D71F9 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		9F0F4663780B81023DB974C16C30663F /* Pods-AHFMSearchVCManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHFMSearchVCManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A5114A9519A19F4CEF00AB851796D1FF /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		A6C2000147595A3C024A54BDF02672AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7B12074BA7FCF22F1209F62D20C15A9 /* Pods_AHFMSearchVCManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFMSearchVCManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A887DC4E751DC9B06B52C414EC628B40 /* AHServiceRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHServiceRouter-prefix.pch"; sourceTree = "<group>"; };
+		A942353E2B4243DAC580916DA5F4976D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA41F7B1682FAE0C12EE2AE8A51A9778 /* AHServiceRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHServiceRouter.swift; path = AHServiceRouter/Classes/AHServiceRouter.swift; sourceTree = "<group>"; };
+		ABB67B70CD5899E492D6313A376E0F1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABCBF9C3BA112B67A5BF6E59C0DD29BD /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
+		ACE1711D21CA7328436D1DD22F2D6E38 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		B0BF6C2E1B828781AC0971C6964D0065 /* AHFMModuleManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMModuleManager-umbrella.h"; sourceTree = "<group>"; };
+		B32E5543DC09B0A73B7A1BC047DE8E6C /* Pods-AHFMSearchVCManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AHFMSearchVCManager_Tests.modulemap"; sourceTree = "<group>"; };
+		B3856ADC30E1A765B52A98B179526186 /* Pods-AHFMSearchVCManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHFMSearchVCManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B89208712CA022203399977EBF5146CE /* AHFMModuleManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMModuleManager.swift; path = AHFMModuleManager/Classes/AHFMModuleManager.swift; sourceTree = "<group>"; };
+		BC707EADD5F4BE2EEB9E22049D452364 /* Pods_AHFMSearchVCManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFMSearchVCManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6F4F0E9385F5FCF18EACF3593A1CE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C10E9CD8B64D230BEB6719D5151B5F07 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		C151527BF1B4BAD1C389C4C9EEA5FF4B /* Pods-AHFMSearchVCManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHFMSearchVCManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		C1BC96AAFD0A4DE37BA25D4CF07F16D2 /* AHFMKeywordVCServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMKeywordVCServices-umbrella.h"; sourceTree = "<group>"; };
+		C3FDA51D7ECF2AC59607F7B4D6FBD76F /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C5601F14C8C8C3D9AD285F320FCB4198 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		C70B3581791F8140D9398304D303DB60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C827FB378A940F592E707C3C09340745 /* AHFMServices.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMServices.xcconfig; sourceTree = "<group>"; };
+		CF3154F4354277DD4C26D96D6F86B9D2 /* AHFMSearchVCManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMSearchVCManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23F4832616894D13B8853502091F8DE /* AHServiceRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHServiceRouter-dummy.m"; sourceTree = "<group>"; };
+		D283E42B391A4B0581BFC5FE52D10CAF /* AHFMKeywordVCServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMKeywordVCServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4252B95393BF083A34F6DE744EE9C58 /* AHFMKeywordVCServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMKeywordVCServices-dummy.m"; sourceTree = "<group>"; };
+		D8CE30BF548258CCB8A2B7D2549F16AB /* Pods-AHFMSearchVCManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHFMSearchVCManager_Example-dummy.m"; sourceTree = "<group>"; };
+		D9F047D597E1A8364C7FC530F59358A7 /* AHFMBottomPlayerServices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMBottomPlayerServices.swift; path = AHFMBottomPlayerServices/Classes/AHFMBottomPlayerServices.swift; sourceTree = "<group>"; };
+		DCBFA0DBCF3BC8997F2F0300B4FD3586 /* AHFMSearchVCService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMSearchVCService.swift; path = AHFMSearchVCService/Classes/AHFMSearchVCService.swift; sourceTree = "<group>"; };
+		DD84FC8DD52A278D5984155F6897AB25 /* AHFMNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7B92FE014B1ECFC03A2FA23D4EA8AC /* AHFMServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMServices.modulemap; sourceTree = "<group>"; };
+		DF005CED0691DA09945467AA16E7A9AF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		E1F0952102C48E61FE0F3F40E745F3DE /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
+		E22E8C3F33CDE30916F04EDADF70DF7D /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
+		E2FEFD714DBC8B7A43E4FD89FE95FF9E /* AHFMModuleManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMModuleManager-dummy.m"; sourceTree = "<group>"; };
+		E587A7BD8BD12BACC722009ABFF9C51F /* AHFMServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67F96D3AD57F62050C58DBB7B8F69B6 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		E89D6017DCBC29CB2CC7BEC4B601B3EA /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		F23B8FC2A579AF1CA357581287859C05 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		F4C5674339932746A75DCF2AD4326A7F /* AHFMBottomPlayerServices.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMBottomPlayerServices.xcconfig; sourceTree = "<group>"; };
+		F56ABBC73A181828FEC373ED67B8851F /* AHFMSearchVCService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMSearchVCService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C07C78672ACF982E98CCE626E20266 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6F4FE4747DDE6D95CA3D8EE6F3FE5F3 /* AHFMSearchVCService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMSearchVCService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F730558917E226590D23978D8982E616 /* AHFMKeywordVCServices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHFMKeywordVCServices.swift; path = AHFMKeywordVCServices/Classes/AHFMKeywordVCServices.swift; sourceTree = "<group>"; };
+		F92ACFF61265C5DF7CBC52D7F6DAA3B4 /* Pods-AHFMSearchVCManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMSearchVCManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FD65DBF21901511A73015284D2C235C9 /* AHFMSearchVCManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMSearchVCManager.modulemap; sourceTree = "<group>"; };
+		FDDAC69A2F05C8C2FB2808BA600CE5BA /* Pods-AHFMSearchVCManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMSearchVCManager_Example-resources.sh"; sourceTree = "<group>"; };
+		FE45BA8DCE32EFFE4994EB2DF96ADFD0 /* AHFMModuleManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMModuleManager-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1166062B37EB1B43B64178207BDF146C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D1AAB68F8BCFC9A8A2BF0C0A3F68A3 /* Alamofire.framework in Frameworks */,
+				4E9DD399D3A90DFB718919649A6AF51F /* Foundation.framework in Frameworks */,
+				EDE190B241D1A4742046640ACC486837 /* KeychainAccess.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9E12627A57FBB04E92F1F159CE25E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7CE37DE16592C58B0639BECFF258379 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27AA71F12CE467E42F94F46F708D4256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE840DC755CB716F2AD544D9C09B6877 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B79C91C85C1F5AEA0330E96DBA67D51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D0CB89982FC8DAB74254794B6B8DFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E091B70A3C90946188664AA2B92E789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74EC93BFE1B2FC4D1BC3D2A58FB3473F /* AHFMBottomPlayerServices.framework in Frameworks */,
+				7D53AAEDE75EABB7DBF0F53025ECA551 /* AHFMKeywordVCServices.framework in Frameworks */,
+				A7B350A8C22C82E3CABA17751F821F55 /* AHFMModuleManager.framework in Frameworks */,
+				E6E5445364991BB6FA562CF12E33680F /* AHFMNetworking.framework in Frameworks */,
+				21B787AC2744EE859FBA07781B2F2867 /* AHFMSearchVCService.framework in Frameworks */,
+				EA8049B94E7FA03E97728A14573504B0 /* AHFMServices.framework in Frameworks */,
+				D83CDBE082390B38434F253A43DAAC8C /* AHServiceRouter.framework in Frameworks */,
+				DE0AA6B1ED674C6102BE7AC034535933 /* Alamofire.framework in Frameworks */,
+				75FCE1776B1A2E082B847A28B0E61961 /* Foundation.framework in Frameworks */,
+				DE72B746D3F858F7BE16FEE3582231DB /* KeychainAccess.framework in Frameworks */,
+				8959F83A5D2106FD79B6DDE2B3A4FFB1 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730A3EA065B856CAA6D73B0A96894F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8EE1DFCA7803278F51A911230C18BD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FBB488D26A7AA70F124213A990949EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8251A5A12D8A9125EDF7554F412BF6C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		907FFD250EB41B4B0A7E58AA0097A575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B450DA67B71E27D60D215F9A0645EE0 /* AHFMServices.framework in Frameworks */,
+				C800B9CE9E2BEC8532007B9FAEC3DD50 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1DBA2846AA2818752769ED02AAAB584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FEA1740D270643D5240612D7AE09AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C71F2CDF6D249BB450CFFA09CBA824 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3056B7D5D5F660D980BDB89657246AEF /* AHFMServices.framework in Frameworks */,
+				A545C15E3B2C8F07103416FE4F060345 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F33E2B55D567338F8F39F6684220F412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED74D6C8098DA3FBDE71F9F2C3B4343A /* AHFMServices.framework in Frameworks */,
+				4EEE6F31829B94C057E75C4EAFF2EA70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF2D4F7FB2AEAD26E90A636A20D8583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1F5BAE2B60D05E7F0243512BDFE2B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD6F8551E3E1449EC4801E7FE1782A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5299E842A542E2D94EB8B636AD0251 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011CC3C526F84A20E769FC7629EA81FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4073F9A6BFDD831D8B6045A977D6EFC /* AHFMBottomPlayerServices */,
+				5BAE907530D6DC9C1B9CD3272B350399 /* AHFMKeywordVCServices */,
+				08F5EC51CF6E9D78F78ABAEBCD5AA258 /* AHFMModuleManager */,
+				60FD86F8FBDF685F6C346B21A5BC9E32 /* AHFMNetworking */,
+				DC2C194494B5F4F8D32DA5B8FF63D3DB /* AHFMSearchVCService */,
+				F16147CD97AD57F90FC43B82907B690E /* AHFMServices */,
+				5F02B965D87A16CCEE6B506BD682FC8B /* AHServiceRouter */,
+				3CD8343FA4C7C786C3412CEC3B88F012 /* Alamofire */,
+				A606A5AD4FB5CE0BB6250A31DD7DAB3A /* KeychainAccess */,
+				6A87648C1007AFC0C46090D5507F8D3C /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		08F5EC51CF6E9D78F78ABAEBCD5AA258 /* AHFMModuleManager */ = {
+			isa = PBXGroup;
+			children = (
+				B89208712CA022203399977EBF5146CE /* AHFMModuleManager.swift */,
+				D6DC9EF5DC73BF838E133A5CACB27289 /* Support Files */,
+			);
+			path = AHFMModuleManager;
+			sourceTree = "<group>";
+		};
+		14560DA2966D109DDCC90A2BED849732 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D30979AA49DD8824603E118E1E69DD60 /* Pods-AHFMSearchVCManager_Example */,
+				E7B36302C5054BA3B16812855F61651D /* Pods-AHFMSearchVCManager_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		23D8F34138625A2494802B6530E822E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB18972BEA41777982F761B442A8ED4 /* AHFMBottomPlayerServices.framework */,
+				D283E42B391A4B0581BFC5FE52D10CAF /* AHFMKeywordVCServices.framework */,
+				04DA5ED4B95C1A39FA0C2187E15AD469 /* AHFMModuleManager.framework */,
+				DD84FC8DD52A278D5984155F6897AB25 /* AHFMNetworking.framework */,
+				CF3154F4354277DD4C26D96D6F86B9D2 /* AHFMSearchVCManager.framework */,
+				F56ABBC73A181828FEC373ED67B8851F /* AHFMSearchVCService.framework */,
+				E587A7BD8BD12BACC722009ABFF9C51F /* AHFMServices.framework */,
+				7B49BE01318C3DE03D221F5A7B782B0B /* AHServiceRouter.framework */,
+				74C57BA7D763414C4164E3F016E0049A /* Alamofire.framework */,
+				F5C07C78672ACF982E98CCE626E20266 /* KeychainAccess.framework */,
+				BC707EADD5F4BE2EEB9E22049D452364 /* Pods_AHFMSearchVCManager_Example.framework */,
+				A7B12074BA7FCF22F1209F62D20C15A9 /* Pods_AHFMSearchVCManager_Tests.framework */,
+				943AD21BC9EE0422E89A2E92A91118DE /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31DE390925DC665566A289C85FDF878C /* AHFMSearchVCManager */ = {
+			isa = PBXGroup;
+			children = (
+				4C49DD567D8E1A3CA18A74149DD7551B /* AHFMSearchVCManager */,
+				AFD71BF4AA4875DB8BC87631AD9004E8 /* Support Files */,
+			);
+			name = AHFMSearchVCManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3A8F2B39AD6B8FC0BDD4CA869A0490A5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0888D04833B20C6B5253A10E9B7AEEA9 /* AHFMNetworking.modulemap */,
+				62FC234416DFC97DC003D9F87E89341A /* AHFMNetworking.xcconfig */,
+				7F148591F106E998816A9545DF7C1962 /* AHFMNetworking-dummy.m */,
+				20695FC36377C1DCDCD48DCEBFF36688 /* AHFMNetworking-prefix.pch */,
+				7E7A22292644C46CF240E006A0D92907 /* AHFMNetworking-umbrella.h */,
+				C70B3581791F8140D9398304D303DB60 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMNetworking";
+			sourceTree = "<group>";
+		};
+		3C5CD6911908901894D38502DD3B4D94 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0518E0C543947C80050D4ADF3589456C /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3CD8343FA4C7C786C3412CEC3B88F012 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				67FE4529E88D58F579C451E90C7E1ACF /* AFError.swift */,
+				C10E9CD8B64D230BEB6719D5151B5F07 /* Alamofire.swift */,
+				8E7667F0527E44A6988453B0D90AEC6D /* DispatchQueue+Alamofire.swift */,
+				3F538D57B1273B56CF0D963DB93538F2 /* MultipartFormData.swift */,
+				7BE56AFF892F2667FD4F872366C98C18 /* NetworkReachabilityManager.swift */,
+				12913D4B5726E04FD527ED7F36722303 /* Notifications.swift */,
+				14168FB41DC26478BF91CBE3B9BB4CAA /* ParameterEncoding.swift */,
+				DF005CED0691DA09945467AA16E7A9AF /* Request.swift */,
+				07EE3767D90B594B7AB37D1831C704B7 /* Response.swift */,
+				98CB30FEF16BC53D04D4F0ED90AEEBDE /* ResponseSerialization.swift */,
+				238FDD049B4DA82A06CBA43097B7419C /* Result.swift */,
+				2753825F9DFE3F9A02CC89335E37CDBA /* ServerTrustPolicy.swift */,
+				90E7A84CB3D7DCF07C0DAFCF845F6AEB /* SessionDelegate.swift */,
+				1E2BBE600D4D738C8BFE53CFAD6A1575 /* SessionManager.swift */,
+				03F906967659086354B70B2F5C7A2CCE /* TaskDelegate.swift */,
+				E89D6017DCBC29CB2CC7BEC4B601B3EA /* Timeline.swift */,
+				8AB5F3C985A25FFF60C3C547A042BB13 /* Validation.swift */,
+				768D6F60C76F6990C518476D1D8AE0BA /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		48EC8BF0233C8FB1D8AE9960A2FFADAD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3598023A86815BCD450605A8AE65225B /* AHFMSearchVCManager.swift */,
+				2DD55F15E3724B1141D7EBCFBE146763 /* Manager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4C49DD567D8E1A3CA18A74149DD7551B /* AHFMSearchVCManager */ = {
+			isa = PBXGroup;
+			children = (
+				48EC8BF0233C8FB1D8AE9960A2FFADAD /* Classes */,
+			);
+			path = AHFMSearchVCManager;
+			sourceTree = "<group>";
+		};
+		5BAE907530D6DC9C1B9CD3272B350399 /* AHFMKeywordVCServices */ = {
+			isa = PBXGroup;
+			children = (
+				F730558917E226590D23978D8982E616 /* AHFMKeywordVCServices.swift */,
+				6479938061B1ABD5FC46A34FD1F238DE /* Support Files */,
+			);
+			path = AHFMKeywordVCServices;
+			sourceTree = "<group>";
+		};
+		5DFAB93CC0D851DA547F98AFE90E7992 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1692ECB5DE6465B7D607F80EE5A4CE /* Info.plist */,
+				48E9E3599AEB0928F8E4C608EBE2AE8D /* KeychainAccess.modulemap */,
+				1DB7C67CDF038263C5C74436C30ED53B /* KeychainAccess.xcconfig */,
+				E22E8C3F33CDE30916F04EDADF70DF7D /* KeychainAccess-dummy.m */,
+				ABCBF9C3BA112B67A5BF6E59C0DD29BD /* KeychainAccess-prefix.pch */,
+				E1F0952102C48E61FE0F3F40E745F3DE /* KeychainAccess-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainAccess";
+			sourceTree = "<group>";
+		};
+		5F02B965D87A16CCEE6B506BD682FC8B /* AHServiceRouter */ = {
+			isa = PBXGroup;
+			children = (
+				AA41F7B1682FAE0C12EE2AE8A51A9778 /* AHServiceRouter.swift */,
+				8D2213F040C1A0740BB77160A3378672 /* Support Files */,
+			);
+			path = AHServiceRouter;
+			sourceTree = "<group>";
+		};
+		60FD86F8FBDF685F6C346B21A5BC9E32 /* AHFMNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1CBC425920DB6861C68F5BCC7610A829 /* AHFMNetworking.swift */,
+				4C815D2E063775315B537F58F2820017 /* AHKeychain.swift */,
+				52AC2591B1475CD09541C92B0F23B1CD /* AHNetworkConstants.swift */,
+				1263FFFA805002619FE3D55A268F3B11 /* OAuth2Handler.swift */,
+				3A8F2B39AD6B8FC0BDD4CA869A0490A5 /* Support Files */,
+			);
+			path = AHFMNetworking;
+			sourceTree = "<group>";
+		};
+		6479938061B1ABD5FC46A34FD1F238DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC91E0F022ED4B29A224ADC42D4870A /* AHFMKeywordVCServices.modulemap */,
+				50460371E4BF0712B80D9CA37D3251F5 /* AHFMKeywordVCServices.xcconfig */,
+				D4252B95393BF083A34F6DE744EE9C58 /* AHFMKeywordVCServices-dummy.m */,
+				97FB7BD448A9A2A85650F671AF0B7B28 /* AHFMKeywordVCServices-prefix.pch */,
+				C1BC96AAFD0A4DE37BA25D4CF07F16D2 /* AHFMKeywordVCServices-umbrella.h */,
+				A6C2000147595A3C024A54BDF02672AE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMKeywordVCServices";
+			sourceTree = "<group>";
+		};
+		6A87648C1007AFC0C46090D5507F8D3C /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				C3FDA51D7ECF2AC59607F7B4D6FBD76F /* SwiftyJSON.swift */,
+				7917E69B7195EE0CACA615D1D4E39FA4 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		6B926E0872347F7FD7573B364C81C244 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				028FC61C38FB814969340781FB686B82 /* AHFMSearchVCService.modulemap */,
+				470B79CDA9F958A5FBED5F3A2AA015BE /* AHFMSearchVCService.xcconfig */,
+				3722308654BB91360E489F02A71A6C82 /* AHFMSearchVCService-dummy.m */,
+				411D6A8C29D32AB0A4E60228F75820C4 /* AHFMSearchVCService-prefix.pch */,
+				6D642EB7519532A639B69E37C8CF3553 /* AHFMSearchVCService-umbrella.h */,
+				A942353E2B4243DAC580916DA5F4976D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMSearchVCService";
+			sourceTree = "<group>";
+		};
+		70E9FF5E43BC861382114B7BD8503BD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EFC861F928277953FF55B9105A70144 /* AHFMBottomPlayerServices.framework */,
+				6BE61BD50BF345C5D631F3392271BC15 /* AHFMKeywordVCServices.framework */,
+				763431DE678C5562E641D5D45F840696 /* AHFMModuleManager.framework */,
+				1D57D42CE860977AF14CA4EBFF7E684F /* AHFMNetworking.framework */,
+				F6F4FE4747DDE6D95CA3D8EE6F3FE5F3 /* AHFMSearchVCService.framework */,
+				6BE81B1A9B9C29FDA922487826C239E5 /* AHFMServices.framework */,
+				92F167BD00173639209D9ACD552B37C4 /* AHServiceRouter.framework */,
+				805AF79E556F3CDB4348F1B4E8A79B28 /* Alamofire.framework */,
+				936AEC94A92AB9DD23D05784892DFE82 /* KeychainAccess.framework */,
+				91548789F7D5524C7C70AA256D0A1C36 /* SwiftyJSON.framework */,
+				3C5CD6911908901894D38502DD3B4D94 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		768D6F60C76F6990C518476D1D8AE0BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				752A7F53F4B312DBF395ED8F1822C44E /* Alamofire.modulemap */,
+				78B59596AD7CB01E5DFADD4D574A538E /* Alamofire.xcconfig */,
+				232CD22DE900A37DE02B978C3CCEDD8D /* Alamofire-dummy.m */,
+				C5601F14C8C8C3D9AD285F320FCB4198 /* Alamofire-prefix.pch */,
+				E67F96D3AD57F62050C58DBB7B8F69B6 /* Alamofire-umbrella.h */,
+				BF6F4F0E9385F5FCF18EACF3593A1CE3 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		7917E69B7195EE0CACA615D1D4E39FA4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CD356306DB5DC20B8A5976D01336D82 /* Info.plist */,
+				F23B8FC2A579AF1CA357581287859C05 /* SwiftyJSON.modulemap */,
+				ACE1711D21CA7328436D1DD22F2D6E38 /* SwiftyJSON.xcconfig */,
+				A5114A9519A19F4CEF00AB851796D1FF /* SwiftyJSON-dummy.m */,
+				9ED9DCF8CAB0CE30C8FC192A347D71F9 /* SwiftyJSON-prefix.pch */,
+				297EC1F95B656EF7A99B0CF4E7313444 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8ADFD6499CD5B8654551131EF8A4C94B /* Development Pods */,
+				70E9FF5E43BC861382114B7BD8503BD9 /* Frameworks */,
+				011CC3C526F84A20E769FC7629EA81FF /* Pods */,
+				23D8F34138625A2494802B6530E822E6 /* Products */,
+				14560DA2966D109DDCC90A2BED849732 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8ADFD6499CD5B8654551131EF8A4C94B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31DE390925DC665566A289C85FDF878C /* AHFMSearchVCManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8D2213F040C1A0740BB77160A3378672 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78BB5FB491FD1ECEFBEDD637E6BA97C7 /* AHServiceRouter.modulemap */,
+				17FA37346C8CCDF3D598946FBD9D9906 /* AHServiceRouter.xcconfig */,
+				D23F4832616894D13B8853502091F8DE /* AHServiceRouter-dummy.m */,
+				A887DC4E751DC9B06B52C414EC628B40 /* AHServiceRouter-prefix.pch */,
+				09B854878F95C80DC8FDABD486120667 /* AHServiceRouter-umbrella.h */,
+				3B073CC88581955FB2F91F170ECCCD7B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHServiceRouter";
+			sourceTree = "<group>";
+		};
+		A606A5AD4FB5CE0BB6250A31DD7DAB3A /* KeychainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				7FFE766D6A20E2C7232832E254FB410E /* Keychain.swift */,
+				5DFAB93CC0D851DA547F98AFE90E7992 /* Support Files */,
+			);
+			path = KeychainAccess;
+			sourceTree = "<group>";
+		};
+		AFD71BF4AA4875DB8BC87631AD9004E8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD65DBF21901511A73015284D2C235C9 /* AHFMSearchVCManager.modulemap */,
+				918C93D400A163C44C2AB52C48898A6C /* AHFMSearchVCManager.xcconfig */,
+				0134F565C22207305457E3F5BE78D87E /* AHFMSearchVCManager-dummy.m */,
+				4F9ADB0A48D3C6BE7137B2368C9B254F /* AHFMSearchVCManager-prefix.pch */,
+				7C61F397745319EFFB0BC12E5139FD15 /* AHFMSearchVCManager-umbrella.h */,
+				0045F6B6E3A29D845A15EB7E6E9759B2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AHFMSearchVCManager";
+			sourceTree = "<group>";
+		};
+		B1AB9CAD09EE44506D8904E775139673 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				463981DE0960843F77AC1B8BDB302C72 /* AHFMBottomPlayerServices.modulemap */,
+				F4C5674339932746A75DCF2AD4326A7F /* AHFMBottomPlayerServices.xcconfig */,
+				43F0AEB0AF8A19813E7D4D3E06586035 /* AHFMBottomPlayerServices-dummy.m */,
+				4951D3F968AC92400972817499032244 /* AHFMBottomPlayerServices-prefix.pch */,
+				0D32A09727380F01CB78844A885D88F4 /* AHFMBottomPlayerServices-umbrella.h */,
+				5AB5A94F0A77280B385DECC398CBB691 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMBottomPlayerServices";
+			sourceTree = "<group>";
+		};
+		D30979AA49DD8824603E118E1E69DD60 /* Pods-AHFMSearchVCManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				82A1861818D758F847EA9CC944B79EEE /* Info.plist */,
+				0000A077C94A6A7391ACDE927A0A49CD /* Pods-AHFMSearchVCManager_Example.modulemap */,
+				993F84995EA736DCEA1E16B7635C2003 /* Pods-AHFMSearchVCManager_Example-acknowledgements.markdown */,
+				B3856ADC30E1A765B52A98B179526186 /* Pods-AHFMSearchVCManager_Example-acknowledgements.plist */,
+				D8CE30BF548258CCB8A2B7D2549F16AB /* Pods-AHFMSearchVCManager_Example-dummy.m */,
+				F92ACFF61265C5DF7CBC52D7F6DAA3B4 /* Pods-AHFMSearchVCManager_Example-frameworks.sh */,
+				FDDAC69A2F05C8C2FB2808BA600CE5BA /* Pods-AHFMSearchVCManager_Example-resources.sh */,
+				4EFD9EA8B3C06217DF1CBCA0DB47B5D0 /* Pods-AHFMSearchVCManager_Example-umbrella.h */,
+				7D034256711672188816818F674C932F /* Pods-AHFMSearchVCManager_Example.debug.xcconfig */,
+				883DCC201F830D999DB1A6CD51943F81 /* Pods-AHFMSearchVCManager_Example.release.xcconfig */,
+			);
+			name = "Pods-AHFMSearchVCManager_Example";
+			path = "Target Support Files/Pods-AHFMSearchVCManager_Example";
+			sourceTree = "<group>";
+		};
+		D6B6574880DB12D4742966F72A1B4DB5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE7B92FE014B1ECFC03A2FA23D4EA8AC /* AHFMServices.modulemap */,
+				C827FB378A940F592E707C3C09340745 /* AHFMServices.xcconfig */,
+				4E38560AE75589CB008581F219631B63 /* AHFMServices-dummy.m */,
+				5BE632B5EB8963B24D537D6CD4EAB977 /* AHFMServices-prefix.pch */,
+				557C9F2F2BAA2A9E03C11039DE052441 /* AHFMServices-umbrella.h */,
+				990BD35498F85694122DDCCAF7D6144D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMServices";
+			sourceTree = "<group>";
+		};
+		D6DC9EF5DC73BF838E133A5CACB27289 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				087E3289AD3BACC3E62EC6F2D18B7781 /* AHFMModuleManager.modulemap */,
+				86B178FBA72C28690FD1BB5686F4BC40 /* AHFMModuleManager.xcconfig */,
+				E2FEFD714DBC8B7A43E4FD89FE95FF9E /* AHFMModuleManager-dummy.m */,
+				FE45BA8DCE32EFFE4994EB2DF96ADFD0 /* AHFMModuleManager-prefix.pch */,
+				B0BF6C2E1B828781AC0971C6964D0065 /* AHFMModuleManager-umbrella.h */,
+				ABB67B70CD5899E492D6313A376E0F1F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHFMModuleManager";
+			sourceTree = "<group>";
+		};
+		DC2C194494B5F4F8D32DA5B8FF63D3DB /* AHFMSearchVCService */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFA0DBCF3BC8997F2F0300B4FD3586 /* AHFMSearchVCService.swift */,
+				6B926E0872347F7FD7573B364C81C244 /* Support Files */,
+			);
+			path = AHFMSearchVCService;
+			sourceTree = "<group>";
+		};
+		E4073F9A6BFDD831D8B6045A977D6EFC /* AHFMBottomPlayerServices */ = {
+			isa = PBXGroup;
+			children = (
+				D9F047D597E1A8364C7FC530F59358A7 /* AHFMBottomPlayerServices.swift */,
+				B1AB9CAD09EE44506D8904E775139673 /* Support Files */,
+			);
+			path = AHFMBottomPlayerServices;
+			sourceTree = "<group>";
+		};
+		E7B36302C5054BA3B16812855F61651D /* Pods-AHFMSearchVCManager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F47C441439ED9FB204AF1CA9232FC /* Info.plist */,
+				B32E5543DC09B0A73B7A1BC047DE8E6C /* Pods-AHFMSearchVCManager_Tests.modulemap */,
+				92FA71F53B77BD0671D69C48E6E75D10 /* Pods-AHFMSearchVCManager_Tests-acknowledgements.markdown */,
+				2BF2DB36B32B16A6D9B11D417C2A07E7 /* Pods-AHFMSearchVCManager_Tests-acknowledgements.plist */,
+				C151527BF1B4BAD1C389C4C9EEA5FF4B /* Pods-AHFMSearchVCManager_Tests-dummy.m */,
+				64631B492A2BFCE228738C255EFF3A9E /* Pods-AHFMSearchVCManager_Tests-frameworks.sh */,
+				1438D9BF1CE6E679B678E645A47AE6E1 /* Pods-AHFMSearchVCManager_Tests-resources.sh */,
+				9F0F4663780B81023DB974C16C30663F /* Pods-AHFMSearchVCManager_Tests-umbrella.h */,
+				699CBCB47373F9C0AA159DBC9654577E /* Pods-AHFMSearchVCManager_Tests.debug.xcconfig */,
+				43AE1612C1E104C6B813BFAB67ADB1D1 /* Pods-AHFMSearchVCManager_Tests.release.xcconfig */,
+			);
+			name = "Pods-AHFMSearchVCManager_Tests";
+			path = "Target Support Files/Pods-AHFMSearchVCManager_Tests";
+			sourceTree = "<group>";
+		};
+		F16147CD97AD57F90FC43B82907B690E /* AHFMServices */ = {
+			isa = PBXGroup;
+			children = (
+				38681C6009D9C85FDE296DECEF4D133D /* AHFMServices.swift */,
+				D6B6574880DB12D4742966F72A1B4DB5 /* Support Files */,
+			);
+			path = AHFMServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		040DBB9361DB930A5C95AE95D512FAEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F353C240F597CEA66C47E97994E7B2B1 /* Pods-AHFMSearchVCManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D73E5E19E1150173A7061A783F4F63F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8426D017CAFF19347FAF72F6A0903A0F /* AHFMBottomPlayerServices-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AC6D9635E58D08E61C6DCBE2B380D83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851E3025D4942FC5612FF410E2C2B0A8 /* KeychainAccess-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31880AB05B470526818B56A802A1ED65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DE5F5349C842948AE90517B5E6201B /* AHFMSearchVCManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2A3D48B1147CE69BE434883DFF57A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2724B4BC11F2C6F531E4EF6B7CE3EE38 /* AHFMModuleManager-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F758A417783FCC1C3369545FCB8904C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7716959063647D747B4441186D78897 /* AHFMNetworking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A29C6D73AFE44AFA37AB980DD38BD14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B4702B1682B6B43E2F979040019175 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EA8C808F24E968BA1AE9F08AF4B2380 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9119DD69F6D28CA941B70F1A0551C677 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FF4848C3E093083046C8019D2AF2C81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B634A535B97BE1C7474C2F7639224B66 /* AHFMSearchVCService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D359D2A2764B9636238DAF6F7F127A51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D150B02057B056EA30F39C082973BC /* Pods-AHFMSearchVCManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5919B5C2F73CF5DF481C2B21F6347BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A9FBC08A76D1B52CD72301F8387DF3B /* AHFMKeywordVCServices-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB2FE14EA02E25F4E16D2DEA368DBE2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BD7BF76F501FC24128BB4BAB6F053C /* AHServiceRouter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38D0AB1166D12D8154ED19E28703A06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C2B26233D486908A223D7AD91321E7 /* AHFMServices-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		281DC9F00597807CD56AEFAC9414C787 /* AHFMSearchVCService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC816C6D2063D26113C49212F9AB4B2 /* Build configuration list for PBXNativeTarget "AHFMSearchVCService" */;
+			buildPhases = (
+				822282860C5B70ABBABF674C399679DF /* Sources */,
+				907FFD250EB41B4B0A7E58AA0097A575 /* Frameworks */,
+				9FF4848C3E093083046C8019D2AF2C81 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A4ABEC44E75FD7066A8691D3DF92CE4 /* PBXTargetDependency */,
+			);
+			name = AHFMSearchVCService;
+			productName = AHFMSearchVCService;
+			productReference = F56ABBC73A181828FEC373ED67B8851F /* AHFMSearchVCService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3D673464A3928306B697770440385B35 /* Pods-AHFMSearchVCManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9387F053E9D26AF44C730D679F983ED6 /* Build configuration list for PBXNativeTarget "Pods-AHFMSearchVCManager_Example" */;
+			buildPhases = (
+				3C1EA80CAD0DF43A26EB0218B58C2472 /* Sources */,
+				8FBB488D26A7AA70F124213A990949EA /* Frameworks */,
+				040DBB9361DB930A5C95AE95D512FAEA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D393301986399676DB6BAEE661F3A02D /* PBXTargetDependency */,
+				08C319AB2363CEE82A462CA4C3C408EB /* PBXTargetDependency */,
+				58BFBB783D89A030E6A1001D528A15A6 /* PBXTargetDependency */,
+				12B59E49141A5E8C4AEEF14651853243 /* PBXTargetDependency */,
+				635FECF34F42AA4E9118E2E49F36B674 /* PBXTargetDependency */,
+				4A5F25C995A693AAF12E35B2ED43092F /* PBXTargetDependency */,
+				51DA5D00C0D3C0603E6B4E18CE6C7BD6 /* PBXTargetDependency */,
+				206E259BAC818AA6C2DB7A560B031D71 /* PBXTargetDependency */,
+				8DB4A1BCAA73D5E9F241FB27DCA27E07 /* PBXTargetDependency */,
+				A1271A5E9EE16C195564C01BBEB72DCE /* PBXTargetDependency */,
+				A7467526D3440193F24C24F6FDAB1438 /* PBXTargetDependency */,
+			);
+			name = "Pods-AHFMSearchVCManager_Example";
+			productName = "Pods-AHFMSearchVCManager_Example";
+			productReference = BC707EADD5F4BE2EEB9E22049D452364 /* Pods_AHFMSearchVCManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		51D325E7D7D939E69172CA0FD29F6740 /* AHFMNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591ACD9A6E89A9963731666713CCF6E8 /* Build configuration list for PBXNativeTarget "AHFMNetworking" */;
+			buildPhases = (
+				7CB4458815437D1B89E37661AFCBA40B /* Sources */,
+				1166062B37EB1B43B64178207BDF146C /* Frameworks */,
+				5F758A417783FCC1C3369545FCB8904C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86556BCE1EA27B8E4725279CCED41848 /* PBXTargetDependency */,
+				8643B0EB264DD10C5CB5DE5F40F7C310 /* PBXTargetDependency */,
+			);
+			name = AHFMNetworking;
+			productName = AHFMNetworking;
+			productReference = DD84FC8DD52A278D5984155F6897AB25 /* AHFMNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D762CF821B22B52375426FC24E2451B /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29F009480D118A4E4709E2983F3EEBB7 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				7DB2AB6C69AD5E6348FBAE5FEAAA2A8B /* Sources */,
+				27AA71F12CE467E42F94F46F708D4256 /* Frameworks */,
+				8EA8C808F24E968BA1AE9F08AF4B2380 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 74C57BA7D763414C4164E3F016E0049A /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F3A82B83022BFDBAEDB60C32B6ADCCE /* AHFMSearchVCManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B82D7703D13615072F2C9A45746289D /* Build configuration list for PBXNativeTarget "AHFMSearchVCManager" */;
+			buildPhases = (
+				E21C2FD3D00574523457C32124A33CE9 /* Sources */,
+				4E091B70A3C90946188664AA2B92E789 /* Frameworks */,
+				31880AB05B470526818B56A802A1ED65 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				601ABBE5A86A616A8A6EE37B9AAD55A6 /* PBXTargetDependency */,
+				E63ACA4A4F8813923C87E3A79DA1E441 /* PBXTargetDependency */,
+				B841B82EB0417A9214723F698B074D41 /* PBXTargetDependency */,
+				0CA856A37391CD91CD0DF3B1448DF107 /* PBXTargetDependency */,
+				18FB7B1889A247DCB528B3A259829FB1 /* PBXTargetDependency */,
+				682D8F9F0A20FC534E85FAF7A281B270 /* PBXTargetDependency */,
+				C4D4C99B72AA2499B00F447265E9DDFA /* PBXTargetDependency */,
+				A261C4641232D7C8AD118118B604F6C6 /* PBXTargetDependency */,
+				B016721DC03E23EA1D7BA4442E57D7F7 /* PBXTargetDependency */,
+				F320F9CD3419DC2973ED6A8D31EF79D4 /* PBXTargetDependency */,
+			);
+			name = AHFMSearchVCManager;
+			productName = AHFMSearchVCManager;
+			productReference = CF3154F4354277DD4C26D96D6F86B9D2 /* AHFMSearchVCManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C0AFAE42E02C2AC84D5587A0566CF30 /* Pods-AHFMSearchVCManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2EB828E9120CBAE9D315B01ACA7D81 /* Build configuration list for PBXNativeTarget "Pods-AHFMSearchVCManager_Tests" */;
+			buildPhases = (
+				F6FFA7E5BDAF7355DB2E10601C88E872 /* Sources */,
+				730A3EA065B856CAA6D73B0A96894F58 /* Frameworks */,
+				D359D2A2764B9636238DAF6F7F127A51 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AHFMSearchVCManager_Tests";
+			productName = "Pods-AHFMSearchVCManager_Tests";
+			productReference = A7B12074BA7FCF22F1209F62D20C15A9 /* Pods_AHFMSearchVCManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E97C0A86C6735476F20317F9C290793 /* AHFMKeywordVCServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 967963B87E77FE584F33190137D7D33D /* Build configuration list for PBXNativeTarget "AHFMKeywordVCServices" */;
+			buildPhases = (
+				837F69C15A0A12F5B8589F7DAFF2E42C /* Sources */,
+				E6C71F2CDF6D249BB450CFFA09CBA824 /* Frameworks */,
+				D5919B5C2F73CF5DF481C2B21F6347BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6D8BC4548C42A225748C5B0D8312FCC /* PBXTargetDependency */,
+			);
+			name = AHFMKeywordVCServices;
+			productName = AHFMKeywordVCServices;
+			productReference = D283E42B391A4B0581BFC5FE52D10CAF /* AHFMKeywordVCServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71CAD123705AC9F38F2080F525733EA1 /* KeychainAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A26F639E85DF11CB40EF37179A8C692 /* Build configuration list for PBXNativeTarget "KeychainAccess" */;
+			buildPhases = (
+				D07C1ED3859436505D05ADF6FBCD9D91 /* Sources */,
+				FDF2D4F7FB2AEAD26E90A636A20D8583 /* Frameworks */,
+				2AC6D9635E58D08E61C6DCBE2B380D83 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainAccess;
+			productName = KeychainAccess;
+			productReference = F5C07C78672ACF982E98CCE626E20266 /* KeychainAccess.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C1EE9091653098E2BCC00F7B1FC00DB /* AHFMBottomPlayerServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F08A6A370D708C514168897485C508 /* Build configuration list for PBXNativeTarget "AHFMBottomPlayerServices" */;
+			buildPhases = (
+				290F6C9A2CABE2B1CE0BC53A9935021D /* Sources */,
+				F33E2B55D567338F8F39F6684220F412 /* Frameworks */,
+				0D73E5E19E1150173A7061A783F4F63F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03A2FE7898C5CCBC5E5864410AE78AD2 /* PBXTargetDependency */,
+			);
+			name = AHFMBottomPlayerServices;
+			productName = AHFMBottomPlayerServices;
+			productReference = 3DB18972BEA41777982F761B442A8ED4 /* AHFMBottomPlayerServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6B749285B2BCE20FE45EF0783729029 /* AHFMServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72B62B0BBEA03081C7EE487941A4A691 /* Build configuration list for PBXNativeTarget "AHFMServices" */;
+			buildPhases = (
+				7473432F8039671F9EC2E607C56219FB /* Sources */,
+				3B79C91C85C1F5AEA0330E96DBA67D51 /* Frameworks */,
+				F38D0AB1166D12D8154ED19E28703A06 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHFMServices;
+			productName = AHFMServices;
+			productReference = E587A7BD8BD12BACC722009ABFF9C51F /* AHFMServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C88927BE4F54B6FA3441BE9273219233 /* AHFMModuleManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44BAAECC2609079E722CE39735FD684 /* Build configuration list for PBXNativeTarget "AHFMModuleManager" */;
+			buildPhases = (
+				5F95B4B4366C0E863BA492215AD623E0 /* Sources */,
+				1B9E12627A57FBB04E92F1F159CE25E8 /* Frameworks */,
+				5B2A3D48B1147CE69BE434883DFF57A5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHFMModuleManager;
+			productName = AHFMModuleManager;
+			productReference = 04DA5ED4B95C1A39FA0C2187E15AD469 /* AHFMModuleManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F04DD2D362C46C9C4CAA4AB6035A414F /* AHServiceRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0E7B75496C7D188A0B0663475E6D14 /* Build configuration list for PBXNativeTarget "AHServiceRouter" */;
+			buildPhases = (
+				278B85601B0BD0524050F3F3C1BACC1D /* Sources */,
+				A1DBA2846AA2818752769ED02AAAB584 /* Frameworks */,
+				DB2FE14EA02E25F4E16D2DEA368DBE2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHServiceRouter;
+			productName = AHServiceRouter;
+			productReference = 7B49BE01318C3DE03D221F5A7B782B0B /* AHServiceRouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE7102807C3633592B8FE9059AF67B90 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDEF116607C708029D90749D927320F /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				EAC020C14898D64B43579337AC2664E2 /* Sources */,
+				FFD6F8551E3E1449EC4801E7FE1782A5 /* Frameworks */,
+				7A29C6D73AFE44AFA37AB980DD38BD14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 943AD21BC9EE0422E89A2E92A91118DE /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 23D8F34138625A2494802B6530E822E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C1EE9091653098E2BCC00F7B1FC00DB /* AHFMBottomPlayerServices */,
+				6E97C0A86C6735476F20317F9C290793 /* AHFMKeywordVCServices */,
+				C88927BE4F54B6FA3441BE9273219233 /* AHFMModuleManager */,
+				51D325E7D7D939E69172CA0FD29F6740 /* AHFMNetworking */,
+				5F3A82B83022BFDBAEDB60C32B6ADCCE /* AHFMSearchVCManager */,
+				281DC9F00597807CD56AEFAC9414C787 /* AHFMSearchVCService */,
+				B6B749285B2BCE20FE45EF0783729029 /* AHFMServices */,
+				F04DD2D362C46C9C4CAA4AB6035A414F /* AHServiceRouter */,
+				5D762CF821B22B52375426FC24E2451B /* Alamofire */,
+				71CAD123705AC9F38F2080F525733EA1 /* KeychainAccess */,
+				3D673464A3928306B697770440385B35 /* Pods-AHFMSearchVCManager_Example */,
+				6C0AFAE42E02C2AC84D5587A0566CF30 /* Pods-AHFMSearchVCManager_Tests */,
+				FE7102807C3633592B8FE9059AF67B90 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		278B85601B0BD0524050F3F3C1BACC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D85BA80E0E9EE3DF895FE59F69DC1DF /* AHServiceRouter-dummy.m in Sources */,
+				F2C7CFD8FA4DE74F69DBB75A599B01C6 /* AHServiceRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290F6C9A2CABE2B1CE0BC53A9935021D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BD5EB7257634C0D6BB8B2D7CCB9CCB7 /* AHFMBottomPlayerServices-dummy.m in Sources */,
+				3DC090B6C3C2240140ED92E593C234F6 /* AHFMBottomPlayerServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C1EA80CAD0DF43A26EB0218B58C2472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156BBE48F869BEC5091D95AC8F414F4B /* Pods-AHFMSearchVCManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F95B4B4366C0E863BA492215AD623E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B865032BF098678A60199370C0130CBE /* AHFMModuleManager-dummy.m in Sources */,
+				3CD3EFD6B166C76A9DD544E9445AB644 /* AHFMModuleManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7473432F8039671F9EC2E607C56219FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97A02594385F188100C50EF3544CCAC /* AHFMServices-dummy.m in Sources */,
+				0598CE735F4731B2D270CE29BB75BBC7 /* AHFMServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CB4458815437D1B89E37661AFCBA40B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68EFFE961CB4F79386A6C86A72E65D55 /* AHFMNetworking-dummy.m in Sources */,
+				92921755879D249C0BF7BD0F369B93A3 /* AHFMNetworking.swift in Sources */,
+				751D2DDACF50FE30FB606576E8195006 /* AHKeychain.swift in Sources */,
+				A0BD72DA6839270922C600C180EDA8F3 /* AHNetworkConstants.swift in Sources */,
+				DBC1BC4DAB990D23005EC65350658DFE /* OAuth2Handler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB2AB6C69AD5E6348FBAE5FEAAA2A8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF555CACADC42DA037212216F3A3B1A /* AFError.swift in Sources */,
+				E9033A3B8AED9CDE98AC2D5F2118C737 /* Alamofire-dummy.m in Sources */,
+				6262B52C91B096754042D8ED7C098683 /* Alamofire.swift in Sources */,
+				62B64C2CAFA391E58202E80FC5649957 /* DispatchQueue+Alamofire.swift in Sources */,
+				2B44EC7439E12F6315BE810500AD48A0 /* MultipartFormData.swift in Sources */,
+				C61FE9F051B9AD0E79F1D712592FB582 /* NetworkReachabilityManager.swift in Sources */,
+				2EACD002BA0C2858837D805F7F9A04CF /* Notifications.swift in Sources */,
+				FE174801DE1397A067077A1D8A969C8D /* ParameterEncoding.swift in Sources */,
+				81F296999CB4CBA7A231023E2603612C /* Request.swift in Sources */,
+				6078664C59940F1066623FCED066390E /* Response.swift in Sources */,
+				251D56CC4C692C69DD3C88E747835930 /* ResponseSerialization.swift in Sources */,
+				E3413080BE1DC030B365CF7F7891848B /* Result.swift in Sources */,
+				4536FE78D68EF93B21ED834B948909CD /* ServerTrustPolicy.swift in Sources */,
+				2AF6307A158F5970C82A34B374896887 /* SessionDelegate.swift in Sources */,
+				782FCE2ED99FE8F2CD1F01C04153FA5B /* SessionManager.swift in Sources */,
+				E55723A418521613951C5AEE9FFB2438 /* TaskDelegate.swift in Sources */,
+				FBBA1A060B541705F67537F0B8426651 /* Timeline.swift in Sources */,
+				CEE3B60BEAF21F8745CC6C3485C76E27 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822282860C5B70ABBABF674C399679DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C78E2AE2C27D22900126C013311ED27 /* AHFMSearchVCService-dummy.m in Sources */,
+				D0C70E8423B057B8A2D9EEA7F3B07093 /* AHFMSearchVCService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837F69C15A0A12F5B8589F7DAFF2E42C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E919A6C7B87AD537C2AB800A67B2B45 /* AHFMKeywordVCServices-dummy.m in Sources */,
+				95F6FE62457CB1C1CFAFF97A4A9CEA41 /* AHFMKeywordVCServices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07C1ED3859436505D05ADF6FBCD9D91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1600D6532E2470F85B6229A3D03EF5 /* Keychain.swift in Sources */,
+				2F677D40480B4BF12EB397154B25E18D /* KeychainAccess-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21C2FD3D00574523457C32124A33CE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2234EDB2123746E9E1631A253C92B2B /* AHFMSearchVCManager-dummy.m in Sources */,
+				0439636072010E32C470AD605E7C0B9A /* AHFMSearchVCManager.swift in Sources */,
+				55BCC2CD90926169CD9F3023BFD0DC09 /* Manager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC020C14898D64B43579337AC2664E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272F685254E28CBFC1D9F0C879D4B0D2 /* SwiftyJSON-dummy.m in Sources */,
+				70D275A58774A62FB7CC3E92F1F8EC1C /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FFA7E5BDAF7355DB2E10601C88E872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EEB982517BDDFE03D9DA4617EB5B69 /* Pods-AHFMSearchVCManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03A2FE7898C5CCBC5E5864410AE78AD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMServices;
+			target = B6B749285B2BCE20FE45EF0783729029 /* AHFMServices */;
+			targetProxy = 1A2B263487D5350E0C10436AEC799D56 /* PBXContainerItemProxy */;
+		};
+		08C319AB2363CEE82A462CA4C3C408EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMKeywordVCServices;
+			target = 6E97C0A86C6735476F20317F9C290793 /* AHFMKeywordVCServices */;
+			targetProxy = 3E2D51D8E4751CD1128FB5CA45247A4D /* PBXContainerItemProxy */;
+		};
+		0CA856A37391CD91CD0DF3B1448DF107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMNetworking;
+			target = 51D325E7D7D939E69172CA0FD29F6740 /* AHFMNetworking */;
+			targetProxy = 6B6FE75214A80363F58AD32E08E6DD34 /* PBXContainerItemProxy */;
+		};
+		12B59E49141A5E8C4AEEF14651853243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMNetworking;
+			target = 51D325E7D7D939E69172CA0FD29F6740 /* AHFMNetworking */;
+			targetProxy = 9E753AE8A6FA6522F39056C5B1E679C5 /* PBXContainerItemProxy */;
+		};
+		18FB7B1889A247DCB528B3A259829FB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMSearchVCService;
+			target = 281DC9F00597807CD56AEFAC9414C787 /* AHFMSearchVCService */;
+			targetProxy = 0F804F6040BFAEAB4C61630D00502DE7 /* PBXContainerItemProxy */;
+		};
+		206E259BAC818AA6C2DB7A560B031D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHServiceRouter;
+			target = F04DD2D362C46C9C4CAA4AB6035A414F /* AHServiceRouter */;
+			targetProxy = 3858BF0197044CF211B9DB1DCCF6605F /* PBXContainerItemProxy */;
+		};
+		4A4ABEC44E75FD7066A8691D3DF92CE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMServices;
+			target = B6B749285B2BCE20FE45EF0783729029 /* AHFMServices */;
+			targetProxy = 7D28C7EBE0CA0CE863AB8B55B4DD5617 /* PBXContainerItemProxy */;
+		};
+		4A5F25C995A693AAF12E35B2ED43092F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMSearchVCService;
+			target = 281DC9F00597807CD56AEFAC9414C787 /* AHFMSearchVCService */;
+			targetProxy = 4E43CAB8A48635A9EF1240C327921210 /* PBXContainerItemProxy */;
+		};
+		51DA5D00C0D3C0603E6B4E18CE6C7BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMServices;
+			target = B6B749285B2BCE20FE45EF0783729029 /* AHFMServices */;
+			targetProxy = F724B24EC4DCF6EC064F6299E40627A6 /* PBXContainerItemProxy */;
+		};
+		58BFBB783D89A030E6A1001D528A15A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMModuleManager;
+			target = C88927BE4F54B6FA3441BE9273219233 /* AHFMModuleManager */;
+			targetProxy = 46E8C26DCB9794573A81EE14D55ED137 /* PBXContainerItemProxy */;
+		};
+		601ABBE5A86A616A8A6EE37B9AAD55A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMBottomPlayerServices;
+			target = 8C1EE9091653098E2BCC00F7B1FC00DB /* AHFMBottomPlayerServices */;
+			targetProxy = 22DCEF1C1E883CE4F5D47B94EF1E552E /* PBXContainerItemProxy */;
+		};
+		635FECF34F42AA4E9118E2E49F36B674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMSearchVCManager;
+			target = 5F3A82B83022BFDBAEDB60C32B6ADCCE /* AHFMSearchVCManager */;
+			targetProxy = 4774DA12F7C3F158A4B4FB211B98886A /* PBXContainerItemProxy */;
+		};
+		682D8F9F0A20FC534E85FAF7A281B270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMServices;
+			target = B6B749285B2BCE20FE45EF0783729029 /* AHFMServices */;
+			targetProxy = 0272D4408BC17A89678E7D542BCEB965 /* PBXContainerItemProxy */;
+		};
+		8643B0EB264DD10C5CB5DE5F40F7C310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 71CAD123705AC9F38F2080F525733EA1 /* KeychainAccess */;
+			targetProxy = 29D7F87FCD447C470607CDA8AC3F6FD6 /* PBXContainerItemProxy */;
+		};
+		86556BCE1EA27B8E4725279CCED41848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 5D762CF821B22B52375426FC24E2451B /* Alamofire */;
+			targetProxy = 424CEB916EF037AC5D8951C1F032B1BC /* PBXContainerItemProxy */;
+		};
+		8DB4A1BCAA73D5E9F241FB27DCA27E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 5D762CF821B22B52375426FC24E2451B /* Alamofire */;
+			targetProxy = 1D5DAAC1076E96B3ADD076440B8DACA8 /* PBXContainerItemProxy */;
+		};
+		A1271A5E9EE16C195564C01BBEB72DCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 71CAD123705AC9F38F2080F525733EA1 /* KeychainAccess */;
+			targetProxy = 534743A119CC945B7067F41BC603971A /* PBXContainerItemProxy */;
+		};
+		A261C4641232D7C8AD118118B604F6C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 5D762CF821B22B52375426FC24E2451B /* Alamofire */;
+			targetProxy = 3F284CC049D6FEE16C5B4770C4F28584 /* PBXContainerItemProxy */;
+		};
+		A6D8BC4548C42A225748C5B0D8312FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMServices;
+			target = B6B749285B2BCE20FE45EF0783729029 /* AHFMServices */;
+			targetProxy = 2A96AAA37568C20C8AE8B7B0EADCC022 /* PBXContainerItemProxy */;
+		};
+		A7467526D3440193F24C24F6FDAB1438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = FE7102807C3633592B8FE9059AF67B90 /* SwiftyJSON */;
+			targetProxy = FA2AF6C58FAA3C4D68FF1398D2745F43 /* PBXContainerItemProxy */;
+		};
+		B016721DC03E23EA1D7BA4442E57D7F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainAccess;
+			target = 71CAD123705AC9F38F2080F525733EA1 /* KeychainAccess */;
+			targetProxy = 58C795116390585D2A0CB7D0D721D84C /* PBXContainerItemProxy */;
+		};
+		B841B82EB0417A9214723F698B074D41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMModuleManager;
+			target = C88927BE4F54B6FA3441BE9273219233 /* AHFMModuleManager */;
+			targetProxy = B0970933FE8A3284D5BE9A30EED8D684 /* PBXContainerItemProxy */;
+		};
+		C4D4C99B72AA2499B00F447265E9DDFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHServiceRouter;
+			target = F04DD2D362C46C9C4CAA4AB6035A414F /* AHServiceRouter */;
+			targetProxy = 7B91A04D6A943F0DD3B14F36565BF4C3 /* PBXContainerItemProxy */;
+		};
+		D393301986399676DB6BAEE661F3A02D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMBottomPlayerServices;
+			target = 8C1EE9091653098E2BCC00F7B1FC00DB /* AHFMBottomPlayerServices */;
+			targetProxy = 846152D1C4AAD0A468F1E8CD90DB1E4A /* PBXContainerItemProxy */;
+		};
+		E63ACA4A4F8813923C87E3A79DA1E441 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHFMKeywordVCServices;
+			target = 6E97C0A86C6735476F20317F9C290793 /* AHFMKeywordVCServices */;
+			targetProxy = F13EFB59C01E67CBFEE9A1033AC83CFB /* PBXContainerItemProxy */;
+		};
+		F320F9CD3419DC2973ED6A8D31EF79D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = FE7102807C3633592B8FE9059AF67B90 /* SwiftyJSON */;
+			targetProxy = 2AA3594C693849B4117D2BB41707D1F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		128AD830BEBDDEF2B6854394A280751C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B59596AD7CB01E5DFADD4D574A538E /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		169D968615FF9D74D747A3D0DFD89CB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50460371E4BF0712B80D9CA37D3251F5 /* AHFMKeywordVCServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMKeywordVCServices/AHFMKeywordVCServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMKeywordVCServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMKeywordVCServices/AHFMKeywordVCServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMKeywordVCServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		171F1F51AD2EBA86E441E9F001141CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C5674339932746A75DCF2AD4326A7F /* AHFMBottomPlayerServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMBottomPlayerServices/AHFMBottomPlayerServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMBottomPlayerServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMBottomPlayerServices/AHFMBottomPlayerServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMBottomPlayerServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F59BAACEF24C912BF4101C254FAE7AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 918C93D400A163C44C2AB52C48898A6C /* AHFMSearchVCManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMSearchVCManager/AHFMSearchVCManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMSearchVCManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMSearchVCManager/AHFMSearchVCManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMSearchVCManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		238D61983450BAF52FE856045992F98E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50460371E4BF0712B80D9CA37D3251F5 /* AHFMKeywordVCServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMKeywordVCServices/AHFMKeywordVCServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMKeywordVCServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMKeywordVCServices/AHFMKeywordVCServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMKeywordVCServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C31395F56A390A59195D0DC888D2839 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FA37346C8CCDF3D598946FBD9D9906 /* AHServiceRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHServiceRouter/AHServiceRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHServiceRouter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHServiceRouter/AHServiceRouter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHServiceRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32A8ACD196343DE428EB598D8BA49F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B178FBA72C28690FD1BB5686F4BC40 /* AHFMModuleManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMModuleManager/AHFMModuleManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMModuleManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMModuleManager/AHFMModuleManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMModuleManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32B192911DAA906F9B51E8F1D9CCB416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43AE1612C1E104C6B813BFAB67ADB1D1 /* Pods-AHFMSearchVCManager_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AHFMSearchVCManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHFMSearchVCManager_Tests/Pods-AHFMSearchVCManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AHFMSearchVCManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34291E23BA8B9BC7D569810758A5AD33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE1711D21CA7328436D1DD22F2D6E38 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D9999E99A0CD780F7CAC4A9DF59E8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C5674339932746A75DCF2AD4326A7F /* AHFMBottomPlayerServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMBottomPlayerServices/AHFMBottomPlayerServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMBottomPlayerServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMBottomPlayerServices/AHFMBottomPlayerServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMBottomPlayerServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58708AF6C1BA29BE069759C69906DB83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE1711D21CA7328436D1DD22F2D6E38 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		765BDD5A08961B0C3008D22AAE5229AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B178FBA72C28690FD1BB5686F4BC40 /* AHFMModuleManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMModuleManager/AHFMModuleManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMModuleManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMModuleManager/AHFMModuleManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMModuleManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B29C501E1B175744D78B1B787C484B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470B79CDA9F958A5FBED5F3A2AA015BE /* AHFMSearchVCService.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMSearchVCService/AHFMSearchVCService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMSearchVCService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMSearchVCService/AHFMSearchVCService.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMSearchVCService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A84F909344476F292D3C38AA68CBFD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883DCC201F830D999DB1A6CD51943F81 /* Pods-AHFMSearchVCManager_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AHFMSearchVCManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHFMSearchVCManager_Example/Pods-AHFMSearchVCManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AHFMSearchVCManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9328869B9F7AE4041DB2052DD49F3763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FC234416DFC97DC003D9F87E89341A /* AHFMNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMNetworking/AHFMNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMNetworking/AHFMNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9479D7E7A46B76D6D5805EABB0E509DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C827FB378A940F592E707C3C09340745 /* AHFMServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMServices/AHFMServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMServices/AHFMServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96111FD9676163DF32537087B6821466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB7C67CDF038263C5C74436C30ED53B /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1CF88D6D600FC5D635E15902C3702BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB7C67CDF038263C5C74436C30ED53B /* KeychainAccess.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainAccess/KeychainAccess-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainAccess/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainAccess/KeychainAccess.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KeychainAccess;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A7B947F8EA1490A4CA8D9638A776FD53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470B79CDA9F958A5FBED5F3A2AA015BE /* AHFMSearchVCService.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMSearchVCService/AHFMSearchVCService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMSearchVCService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMSearchVCService/AHFMSearchVCService.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMSearchVCService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF380AD9222E2AC92696249F744EC8D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B59596AD7CB01E5DFADD4D574A538E /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AFFDA7A48704D3A5A8D9F1CE66C73543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FA37346C8CCDF3D598946FBD9D9906 /* AHServiceRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHServiceRouter/AHServiceRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHServiceRouter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHServiceRouter/AHServiceRouter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHServiceRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA5FCC4B92A9E8A7A728BC75FA869EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D034256711672188816818F674C932F /* Pods-AHFMSearchVCManager_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AHFMSearchVCManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHFMSearchVCManager_Example/Pods-AHFMSearchVCManager_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AHFMSearchVCManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C746E76D42E0CF0350131CD5262A87B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FC234416DFC97DC003D9F87E89341A /* AHFMNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMNetworking/AHFMNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMNetworking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMNetworking/AHFMNetworking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C816D7CD6E6E9723BA70F1114206C070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C827FB378A940F592E707C3C09340745 /* AHFMServices.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMServices/AHFMServices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMServices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMServices/AHFMServices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHFMServices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E547C89C7AE55B937C69E887CD975148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 699CBCB47373F9C0AA159DBC9654577E /* Pods-AHFMSearchVCManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AHFMSearchVCManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AHFMSearchVCManager_Tests/Pods-AHFMSearchVCManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AHFMSearchVCManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5731EA9D0EB595BC34D415780697FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 918C93D400A163C44C2AB52C48898A6C /* AHFMSearchVCManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHFMSearchVCManager/AHFMSearchVCManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHFMSearchVCManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHFMSearchVCManager/AHFMSearchVCManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AHFMSearchVCManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00F08A6A370D708C514168897485C508 /* Build configuration list for PBXNativeTarget "AHFMBottomPlayerServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9999E99A0CD780F7CAC4A9DF59E8F7 /* Debug */,
+				171F1F51AD2EBA86E441E9F001141CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29F009480D118A4E4709E2983F3EEBB7 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				128AD830BEBDDEF2B6854394A280751C /* Debug */,
+				AF380AD9222E2AC92696249F744EC8D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A26F639E85DF11CB40EF37179A8C692 /* Build configuration list for PBXNativeTarget "KeychainAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96111FD9676163DF32537087B6821466 /* Debug */,
+				A1CF88D6D600FC5D635E15902C3702BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B82D7703D13615072F2C9A45746289D /* Build configuration list for PBXNativeTarget "AHFMSearchVCManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F59BAACEF24C912BF4101C254FAE7AE /* Debug */,
+				E5731EA9D0EB595BC34D415780697FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED546DBB23FC32035C9BDC4E22B30BD /* Debug */,
+				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		591ACD9A6E89A9963731666713CCF6E8 /* Build configuration list for PBXNativeTarget "AHFMNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9328869B9F7AE4041DB2052DD49F3763 /* Debug */,
+				C746E76D42E0CF0350131CD5262A87B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72B62B0BBEA03081C7EE487941A4A691 /* Build configuration list for PBXNativeTarget "AHFMServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C816D7CD6E6E9723BA70F1114206C070 /* Debug */,
+				9479D7E7A46B76D6D5805EABB0E509DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F2EB828E9120CBAE9D315B01ACA7D81 /* Build configuration list for PBXNativeTarget "Pods-AHFMSearchVCManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E547C89C7AE55B937C69E887CD975148 /* Debug */,
+				32B192911DAA906F9B51E8F1D9CCB416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9387F053E9D26AF44C730D679F983ED6 /* Build configuration list for PBXNativeTarget "Pods-AHFMSearchVCManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA5FCC4B92A9E8A7A728BC75FA869EC4 /* Debug */,
+				8A84F909344476F292D3C38AA68CBFD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		967963B87E77FE584F33190137D7D33D /* Build configuration list for PBXNativeTarget "AHFMKeywordVCServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169D968615FF9D74D747A3D0DFD89CB3 /* Debug */,
+				238D61983450BAF52FE856045992F98E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB0E7B75496C7D188A0B0663475E6D14 /* Build configuration list for PBXNativeTarget "AHServiceRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C31395F56A390A59195D0DC888D2839 /* Debug */,
+				AFFDA7A48704D3A5A8D9F1CE66C73543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44BAAECC2609079E722CE39735FD684 /* Build configuration list for PBXNativeTarget "AHFMModuleManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				765BDD5A08961B0C3008D22AAE5229AE /* Debug */,
+				32A8ACD196343DE428EB598D8BA49F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDEF116607C708029D90749D927320F /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58708AF6C1BA29BE069759C69906DB83 /* Debug */,
+				34291E23BA8B9BC7D569810758A5AD33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC816C6D2063D26113C49212F9AB4B2 /* Build configuration list for PBXNativeTarget "AHFMSearchVCService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B947F8EA1490A4CA8D9638A776FD53 /* Debug */,
+				7B29C501E1B175744D78B1B787C484B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
